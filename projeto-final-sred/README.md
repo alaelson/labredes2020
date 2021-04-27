@@ -19,7 +19,7 @@
    8. Uma das MVs deve ser o [gateway server](https://github.com/alaelson/labredes2020/blob/570c163421c2b1a3cb0ff203525b1f683d41a189/network/nat/readme.md) do grupo, que deverá ter 2 interfaces rede (WAN e LAN)
    9. Um máquina deve conter o compartilhamento de arquivos com [SAMBA](https://github.com/alaelson/labredes2020/blob/5773a1b1da61a9baabeca6e6277e7dd05c12322b/network/samba/readme.md).
    10. As outras máquinas virtuais devem ter interface para a rede interna (LAN) configurada com o endereçamento ip de cada grupo.
-   11. Duas MVs devem ser os servidores de nomes: nameserver1 (ns1) e nameserver2 (ns2).   
+   11. Duas MVs devem ser os [servidores de nomes](https://github.com/alaelson/labredes2020/blob/8692fb3e9a9d32e1a8415057d24e3514d5f5eecc/network/bind9/readme.md): [nameserver1 (ns1)](https://github.com/alaelson/labredes2020/blob/8692fb3e9a9d32e1a8415057d24e3514d5f5eecc/network/bind9/master.md) e [nameserver2 (ns2)](https://github.com/alaelson/labredes2020/blob/8692fb3e9a9d32e1a8415057d24e3514d5f5eecc/network/bind9/slave.md).   
    12. Realizar a configuração do bind9 com o nameserver1 (master) e o nameserver2 (slave). A quarta MV deve ter o nome e o IP também registrado no servidor DNS   
    13. Colocar no tutorial os resultados todos os testes dos exercícios dos roteiros de NAT, DNS (master e slave) e do compartilhamento de arquivos com samba.
 
