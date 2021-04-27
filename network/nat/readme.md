@@ -178,3 +178,25 @@ $ ifconfig -a
 # Referencias
    - [1] https://www.ascinc.com/blog/linux/how-to-build-a-simple-router-with-ubuntu-server-18-04-1-lts-bionic-beaver/
    - [2] https://www.thomaslaurenson.com/blog/2018/07/05/building-a-ubuntu-linux-gateway/#configure-network-address-translation
+
+
+# Exercícios
+
+   1. Faça login no *gw* e **ping** para as máquinas *ns1*, *ns2*, e *dh1*.
+   2. Faça login no *ns1* e **ping** para as máquinas *ns2*, *gw*, e *dh1*.
+   3. Faça login no *ns2* e **ping** para as máquinas *ns1*, *gw*, e *dh1*.
+   4. Faça login no *dh1* e **ping** para as máquinas *gw*, *ns1* e *ns2*.
+   5. Faça login no *gw* e **nslookup** para *ns1*, *ns2*, e *dh1*.
+   6. Faça login no *ns1* e **nslookup** para as máquinas *ns2*, *gw*, e *dh1*.
+   7. Faça login no *ns2* e **nslookup** para as máquinas *ns1*, *gw*, e *dh1*.
+   8. Faça login no *dh1* e **nslookup** para as máquinas *gw*, *ns1* e *ns2*.
+   9. Faça login no *gw* e **dig** para *ns1*, *ns2*, e *dh1*.
+   10. Faça login no *ns1* e **dig** para as máquinas *ns2*, *gw*, e *dh1*.
+   11. Faça login no *ns2* e **dig** para as máquinas *ns1*, *gw*, e *dh1*.
+   12. Faça login no *dh1* e **dig** para as máquinas *gw*, *ns1* e *ns2*.
+   13. Faça login no *gw* e **dig -x** para os IPs de *ns1*, *ns2*, e *dh1*.
+   14. Faça login no *ns1* e **dig -x** para os IPs de *ns2*, *gw*, e *dh1*.
+   15. Faça login no *ns2* e **dig -x** para os IPs de *ns1*, *gw*, e *dh1*.
+   16. Faça login no *dh1* e **dig -x** para os IPs de *gw*, *ns1* e *ns2*.
+
+
