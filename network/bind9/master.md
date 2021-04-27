@@ -1,39 +1,6 @@
-# Configuração do servidor DNS com Bind9
-
-## Relembre as definições de rede na Tabela 1
 
 
-<p><center> Tabela 1: Definições da rede interna</center></p>
-
-| DESCRIÇÃO   | IP            |
-|:------------|:------------- |
-| rede        | 10.9.14.0     |
-| máscara     | 255.255.255.0 |
-| Gateway     | 10.9.14.1     |
-| Broadcast   | 10.9.14.255   |
-| NameServer1 | 10.9.14.10    |
-| NameServer2 | 10.9.14.11    |
-| DesktoHost1 | 10.9.14.100    |
-
-
-## Configurando o Servidor DNS Master
-
-
-Os nomes das máquinas ou dispositivos que serão configuradas no DNS deverão ser nomeados de acordo com o domínio. A Tabela 2 apresenta os nomes das máquinas para o domínio de exemplo.
-
-<p><center> Tabela 2: Definições do domínio: <b>labredes.ifalarapiraca.local</b></center></p>
-
-|      Apelido      |               NOME               |
-|:------------------|:---------------------------------|
-| gateway (gw)      | gw.labredes.ifalarapiraca.local  |
-| nameserver1 (ns1) | ns1.labredes.ifalarapiraca.local |
-| nameserver2 (ns2) | ns2.labredes.ifalarapiraca.local |
-| desktophost1 (dh1 | dh1.labredes.ifalarapiraca.local |
-
-
-
-
-### Instalação 
+# Instalação 
    * O BIND9 é a aplicação de DNS que roda no servidor.
    * Instalar o bind9 via apt-get
 ```bash
@@ -50,7 +17,7 @@ $ sudo systemctl enable bind9
 
 
 
-### Diretórios do bind
+## Diretórios do bind
    * Os arquivos do bind ficam na no diretório **/etc/bind**. 
 ```bash
 $ ls /etc/bind
