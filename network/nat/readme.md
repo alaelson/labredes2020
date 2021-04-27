@@ -92,7 +92,7 @@ $ ifconfig -a
 $ sudo nano /etc/rc.local
 ```
 
-   6. A seguir, adicione o seguinte script no arquivo /etc/rc.local
+   6. A seguir, adicione o seguinte script no arquivo [/etc/rc.local](rc.local)
 
 ---
 ```bash
