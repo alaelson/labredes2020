@@ -18,14 +18,14 @@
 
 ## Grupo 4
 - Maria Vitória Messias Santos
-- Guilherme Augusto Raimundo Cavalcante de Souza
+- Vitor Emanoel Rodrigues da Costa
 - Gabriel de Jesus Santos
 - Micledson Carlos Santos de Lima
 
 ## Grupo 5
 - Jhully Walkyria Oliveira Santos
 - Mariana Araújo da Silva
-- Vitor Emanoel Rodrigues da Costa
+- Guilherme Augusto Raimundo Cavalcante de Souza
 - Sarah Regina Barbosa Costa
 
 ## Grupo 6
