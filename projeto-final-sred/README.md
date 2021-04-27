@@ -32,3 +32,4 @@
 	title="Figura 2: Topologia de Rede Virtualizada depois da implementação" width="540" height="480" />
 
   14. Grupos da Turma 914 definidos [aqui](https://github.com/alaelson/labredes2020/blob/master/projeto-final-sred/grupos914.md) 
+  15. Grupos da Turma 914 definidos [aqui](https://github.com/alaelson/labredes2020/blob/master/projeto-final-sred/grupos924.md)
