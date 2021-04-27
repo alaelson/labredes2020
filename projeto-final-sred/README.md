@@ -10,7 +10,7 @@
        - A Turma 914 usará a rede 192.168.24.0/24 para criar as subredes de grupos. 
        - Exemplos:
           -- O Grupo 1 da turma 914 usará a faixa 192.168.14.[0-7]/29 
-          -- O Grupo 4 da turma 924 usará a faixa 192.168.14.[24-31]/29 
+          -- O Grupo 4 da turma 924 usará a faixa 192.168.24.[24-31]/29 
           
    5. Criar uma tabela com as definições de domínio, com os nomes e endereços IP das MVs. 
        - O domínio deve obdecer ao formato: ```<grupoX>.<turma9yz>.ifalarapiraca.local.```
