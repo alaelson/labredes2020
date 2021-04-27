@@ -2,7 +2,7 @@
 
 * Para que a máquina acesse os sites e hosts remotos por meio de nomes (Ex. www.google.com) é necessário adcionar os nameservers na configuração da interface de rede.
 * Para isso é configure o arquivo YAML que encontra-se na pasta **/etc/netplan/**.
-* Verifique o nome correto do arquivo no seu servidor. No exemplo a seguir, o nome do arquivo é ***50-cloud-init.yaml***
+* Verifique o nome correto do arquivo no seu servidor. No exemplo a seguir, o nome do arquivo é ***00-installer-config.yaml***
 
 -  Edite o arquivo  ***00-installer-config.yaml*** 
 
