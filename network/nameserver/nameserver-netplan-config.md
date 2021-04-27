@@ -10,7 +10,7 @@
 $ sudo nano /etc/netplan/00-installer-config.yaml
 ```
 
--  Adicione as linhas para a configuração estática do IP. [Baixe o arquivo de exemplo][https://github.com/alaelson/labredes2020/blob/main/network/nameserver/00-installer-config.yaml]
+-  Adicione as linhas para a configuração estática do IP. [Baixe o arquivo de exemplo](https://github.com/alaelson/labredes2020/blob/main/network/nameserver/00-installer-config.yaml)
 ```
 network:
     ethernets:
