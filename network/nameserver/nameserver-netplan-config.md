@@ -10,12 +10,12 @@
 $ sudo nano /etc/netplan/00-installer-config.yaml
 ```
 
--  Adicione as linhas para a configuração estática do IP 
+-  Adicione as linhas para a configuração estática do IP. [Baixe o arquivo de exemplo][https://github.com/alaelson/labredes2020/blob/main/network/nameserver/00-installer-config.yaml]
 ```
 network:
     ethernets:
         ens160:                           # nome da interface que está sendo configurada. Verifique com o comando 'ifconfig -a'
-            addresses: [10.0.0.10/24]     # IP e Máscara do Host. Aqui é só um exemplo, tenha certeza do IP do seu host, ou perderá o acesso remoto.
+            addresses: [10.0.0.11/24]     # IP e Máscara do Host. Aqui é só um exemplo, tenha certeza do IP do seu host, ou perderá o acesso remoto.
             gateway4: 10.0.0.1            # IP do Gateway, Aqui é só um exemplo, tenha certeza do IP do seu gateway, ou perderá o acesso remoto.
             dhcp4: false                  # dhcp4 false -> cliente DHCP está desabilitado, logo o utilizará o IP do campo 'addresses'
             nameservers:
@@ -31,3 +31,5 @@ network:
 $ sudo netplan apply
 $ ifconfig -a
 ```
+
+
