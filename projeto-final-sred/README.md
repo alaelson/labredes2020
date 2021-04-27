@@ -17,10 +17,11 @@
    6. Editar os hostnames com o nome de domínio no S.O. de cada MV.
    7. Em cada vm deve ter o usuário administrador e os usuários com os nomes dos integrantes do grupo. 
    8. Uma das MVs deve ser o [gateway server](https://github.com/alaelson/labredes2020/blob/570c163421c2b1a3cb0ff203525b1f683d41a189/network/nat/readme.md) do grupo, que deverá ter 2 interfaces rede (WAN e LAN)
-   9. As outras máquinas virtuais devem ter interface para a rede interna (LAN) configurada com o endereçamento ip de cada grupo.
-   10. Duas MVs devem ser os servidores de nomes: nameserver1 (ns1) e nameserver2 (ns2).   
-   11. Realizar a configuração do bind9 com o nameserver1 (master) e o nameserver2 (slave). A quarta MV deve ter o nome e o IP também registrado no servidor DNS   
-   12. Colocar no tutorial os resultados todos os testes dos exercícios dos roteiros de NAT e DNS (master e slave).
+   9. Um máquina deve conter o compartilhamento de arquivos com [SAMBA](https://github.com/alaelson/labredes2020/blob/5773a1b1da61a9baabeca6e6277e7dd05c12322b/network/samba/readme.md. 
+   10. As outras máquinas virtuais devem ter interface para a rede interna (LAN) configurada com o endereçamento ip de cada grupo.
+   11. Duas MVs devem ser os servidores de nomes: nameserver1 (ns1) e nameserver2 (ns2).   
+   12. Realizar a configuração do bind9 com o nameserver1 (master) e o nameserver2 (slave). A quarta MV deve ter o nome e o IP também registrado no servidor DNS   
+   13. Colocar no tutorial os resultados todos os testes dos exercícios dos roteiros de NAT, DNS (master e slave) e do compartilhamento de arquivos com samba.
 
 <p><center> Figura 1:  Topologia de Rede Virtualizada antes da execução do projeto.</center></p>   
    <img src="ProjetoFinalSRED-Antes.png" alt="Antes da Implementaçãos"
