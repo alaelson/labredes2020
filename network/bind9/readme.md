@@ -30,9 +30,9 @@ Os nomes das máquinas ou dispositivos que serão configuradas no DNS deverão s
 
 ## Siga os roteiros a configuração de cada name-server
 
-- Configurando o Servidor [DNS Master](https://github.com/alaelson/labredes2020/blob/06ff3f9ceb218d10dcc05e3d2d168c102fcf242e/network/bind9/master.md) (nameserver1)
+- Configurando o Servidor [DNS Master](https://github.com/alaelson/labredes2020/blob/master/network/bind9/master.md) (nameserver1)
 
-- Configurando o Servidor [DNS Slave](https://github.com/alaelson/labredes2020/blob/06ff3f9ceb218d10dcc05e3d2d168c102fcf242e/network/bind9/slave.md) (nameserver1)
+- Configurando o Servidor [DNS Slave](https://github.com/alaelson/labredes2020/blob/master/network/bind9/slave.md) (nameserver1)
 
 # Exercícios
 
