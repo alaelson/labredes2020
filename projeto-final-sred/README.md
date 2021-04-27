@@ -30,3 +30,5 @@
 <p><center> Figura 2:  Topologia de Rede Virtualizada depois da execução do projeto.</center></p>   
    <img src="ProjetoFinalSRED-Depois.png" alt="Depois da Implementação"
 	title="Figura 2: Topologia de Rede Virtualizada depois da implementação" width="540" height="480" />
+
+  14. Grupos da Turma 914 definidos [aqui](https://github.com/alaelson/labredes2020/blob/master/projeto-final-sred/grupos914.md) 
