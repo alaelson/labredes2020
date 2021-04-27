@@ -10,15 +10,15 @@ $ sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 network:
     ethernets:
-        enp0s3:
-            addresses: [10.0.0.11/24]
-            gateway4: 10.0.0.1    
-            dhcp4: false
-            nameservers: 
+        enp0s3:                        # interface local
+            addresses: [10.9.14.11/24]  # ip/mascara
+            gateway4: 10.9.14.1         # ip do gateway
+            dhcp4: false               # 'false' para conf. estatica 
+            nameservers:               # servidores dns
                 addresses:
-                - 10.0.0.10
-                - 10.0.0.11
-                search: [labredes.ifalarapiraca.local]
+                - 10.9.14.10            # ip do ns1
+                - 10.9.14.11            # ip do ns2
+                search: [labredes.ifalarapiraca.local]  # domínio
     version: 2
 ```
 
