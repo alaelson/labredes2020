@@ -21,4 +21,11 @@
    10. Duas MVs devem ser os servidores de nomes: nameserver1 (ns1) e nameserver2 (ns2).   
    11. Realizar a configuração do bind9 com o nameserver1 (master) e o nameserver2 (slave). A quarta MV deve ter o nome e o IP também registrado no servidor DNS   
    12. Colocar no tutorial os resultados todos os testes dos exercícios dos roteiros de NAT e DNS (master e slave).
+
+<p><center> Figura 1:  Topologia de Rede Virtualizada antes da execução do projeto.</center></p>   
+   <img src="ProjetoFinalSRED-Antes.png" alt="Antes da Implementaçãos"
+	title="Figura 1: Topologia de Rede Virtualizada antes da implementação" width="540" height="480" />
        
+<p><center> Figura 2:  Topologia de Rede Virtualizada depois da execução do projeto.</center></p>   
+   <img src="ProjetoFinalSRED-Depois.png" alt="Depois da Implementação"
+	title="Figura 2: Topologia de Rede Virtualizada depois da implementação" width="540" height="480" />
