@@ -50,7 +50,7 @@ $ sudo systemctl enable bind9
 ### configuração de zonas
 
 ```bash
-$ sudo nano db.labredes.ifalarapiraca.local
+$ sudo nano /etc/bind/named.conf.local
 ```
 ```
 zone "labredes.ifalarapiraca.local" {
