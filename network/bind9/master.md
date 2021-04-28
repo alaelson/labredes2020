@@ -183,6 +183,21 @@ zone 14.9.10.in-addr.arpa/IN: loaded serial 1
 OK
 ```
 
+### Configure para somente resolver endereços IPv4
+
+```bash
+$sudo nano \etc\default\named
+```
+- adicione a linha ***OPTIONS="-4 -u bind"***
+```#
+# run resolvconf?
+RESOLVCONF=no
+
+# startup options for the server
+OPTIONS="-4 -u bind"
+```
+
+
 ### Execute o BIND 
 ```bash
 $ sudo systemctl enable bind9
