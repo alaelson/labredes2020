@@ -4,7 +4,7 @@
    2. Criar um documento tutorial/roteiro contendo o passo-a-passo de configuração e execução de  um ambiente de rede virtualizada.
    3. Listar a configuração de hardware utilizada em cada MV. (Ex.: quantidade de memória, número processadores/cores, espaço em disco.
        -  Iremos utilizar as VMs individuais de cada aluno para compor o grupo de máquinas em rede.
-   5. Endereçamento IP e nome do grupo será identificado pelo par nome-número do grupo (exemplo Grupo1), lembrando que o primeiro IP é o IP de rede, e o último é o IP de broadcast.
+   4. Endereçamento IP e nome do grupo será identificado pelo par nome-número do grupo (exemplo Grupo1), lembrando que o primeiro IP é o IP de rede, e o último é o IP de broadcast. [Clique aqui para mais informações!](https://github.com/alaelson/labredes2020/blob/master/projeto-final-sred/subnets_and_names.md)
        - Criar uma tabela com as definições dos IPs das MVs com a máscara de rede /29 (255.255.255.248).
        - A Turma 914 usará a rede 192.168.14.0/24 para criar as subredes de grupos. 
        - A Turma 924 usará a rede 192.168.24.0/24 para criar as subredes de grupos. 
