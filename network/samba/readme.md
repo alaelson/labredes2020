@@ -176,6 +176,8 @@ $ sudo nano /etc/samba/smb.conf
   
   
   6. Edite o arquivo de configuração /etc/samba/smb.conf
+
+	* adicione as interfaces da sua máquina na linha "interfaces = 127.0.0.1/8 enp0s3", separando os nomes das interfaces por espaços.
   
 ```bash
 sudo nano /etc/samba/smb.conf
