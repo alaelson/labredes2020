@@ -25,7 +25,7 @@
 | Broadcast   | 10.0.0.255    |
 | NameServer1 | 10.0.0.10     |
 | NameServer2 | 10.0.0.11     |
-| ubuntu-server | 10.0.0.100   |
+| samba | 10.0.0.100   |
 
 
 
@@ -174,6 +174,37 @@ network:
 $ sudo netplan apply
 $ ifconfig -a
 ```
+
+  11. Encaminhamento de portas para acesso externo à serviços da rede interna.
+  
+  * Para permitir que o serviço de compartilhamento de arquivos esteja disponível externamente, adicione as informações do IPTABLES sobre portas, IP e Interface no arquivo /etc/rc.local conforme o exemplo abaixo, depois reinicie a máquina:
+  
+   a. SAMBA: Para permitir que o serviço de compartilhamento de arquivos esteja disponível externamente:
+        * Portas: 445 e 139
+        * Interface Externa aqui é a WAN: enp0s3
+        * IP do servidor = 10.0.0.100
+        
+```bash
+#Recebe pacotes na porta 445 da interface externa do gw e encaminha para o servidor interno na porta 445
+iptables -A PREROUTING -t nat -i enp0s3 -p tcp –dport 445 -j DNAT –to 10.0.0.100:445
+iptables -A FORWARD -p tcp -d  10.0.0.100 –dport 445 -j ACCEPT
+
+#Recebe pacotes na porta 445 da interface externa do gw e encaminha para o servidor interno na porta 139
+iptables -A PREROUTING -t nat -i enp0s3 -p tcp –dport 139 -j DNAT –to 10.0.0.100:139
+iptables -A FORWARD -p tcp -d  10.0.0.100 –dport 445 -j ACCEPT
+```
+   b. DNS: Para permitir que o serviço de resolução de nomes (DNS) esteja disponível externamente:
+        * Porta: 53
+        * Interface Externa aqui é a WAN: enp0s3
+        * IP do servidor nameserver1 = 10.0.0.10
+        
+```bash
+#Recebe pacotes na porta 445 da interface externa do gw e encaminha para o servidor DNS Master interno na porta 53
+iptables -A PREROUTING -t nat -i enp0s3 -p tcp –dport 53 -j DNAT –to 10.0.0.10:53
+iptables -A FORWARD -p udp -d  10.0.0.10 –dport 53 -j ACCEPT
+```
+
+
 
 # Referencias
    - [1] https://www.ascinc.com/blog/linux/how-to-build-a-simple-router-with-ubuntu-server-18-04-1-lts-bionic-beaver/
