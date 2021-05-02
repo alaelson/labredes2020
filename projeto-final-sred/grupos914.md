@@ -1,14 +1,14 @@
 ## Grupo 1
-Suellen Evelyn de Oliveira Silva
-Júlia Victória Quentino
-Ana Clara Vieira Cordeiro
-Hylka Karoline Cavalcante Santos Melo
+- Suellen Evelyn de Oliveira Silva
+- Júlia Victória Quentino
+- Ana Clara Vieira Cordeiro
+- Hylka Karoline Cavalcante Santos Melo
 
 ## Grupo 2
-Dhiana Pereira da Silva
-José Carlaino dos Santos
-Marília Eduarda Almeida Santos
-José Matheus Aquino Santos
+- Dhiana Pereira da Silva
+- José Carlaino dos Santos
+- Marília Eduarda Almeida Santos
+- José Matheus Aquino Santos
 
 ## Grupo 3
 - Humberto Barbosa Tavares
