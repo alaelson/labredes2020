@@ -41,9 +41,10 @@
 ### habilitar o firewall 
    * Vamos serguir os passos descritos em [1]:
    
-   1. habilitar o firewall:
+   1. habilitar o firewall e permitir o acesso ssh:
 ```bash
  $ sudo ufw enable
+ $ sudo ufw allow ssh
 ```
    2. habilitar o encaminhamento de pacotes das interfaces WAN para LAN, ajustando-se os parâmetros no arquivo **/etc/ufw/sysctl.conf**, removendo-se a marca de comentário (#) da seguinte linha _# net/ipv4/ip_forwarding=1_
 
