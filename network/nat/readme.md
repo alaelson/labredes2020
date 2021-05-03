@@ -151,7 +151,7 @@ $ systemctl status ufw.service
 ```bash
 $ sudo reboot
 ```
-   10. Na máquina NS1 e NS2 ativar os nameservers na interface de rede:
+   10. Nas máquinas SAMBA, NS1 e NS2 ativar o gateway (gateway4: 10.0.0.1) na interface de rede:
 ```bash
 $ sudo nano /etc/netplan/50-cloud-init.yaml
 ```
@@ -190,7 +190,7 @@ $ ifconfig -a
 iptables -A PREROUTING -t nat -i enp0s3 -p tcp –dport 445 -j DNAT –to 10.0.0.100:445
 iptables -A FORWARD -p tcp -d  10.0.0.100 –dport 445 -j ACCEPT
 
-#Recebe pacotes na porta 445 da interface externa do gw e encaminha para o servidor interno na porta 139
+#Recebe pacotes na porta 139 da interface externa do gw e encaminha para o servidor interno na porta 139
 iptables -A PREROUTING -t nat -i enp0s3 -p tcp –dport 139 -j DNAT –to 10.0.0.100:139
 iptables -A FORWARD -p tcp -d  10.0.0.100 –dport 445 -j ACCEPT
 ```
@@ -200,7 +200,7 @@ iptables -A FORWARD -p tcp -d  10.0.0.100 –dport 445 -j ACCEPT
         * IP do servidor nameserver1 = 10.0.0.10
         
 ```bash
-#Recebe pacotes na porta 445 da interface externa do gw e encaminha para o servidor DNS Master interno na porta 53
+#Recebe pacotes na porta 53 da interface externa do gw e encaminha para o servidor DNS Master interno na porta 53
 iptables -A PREROUTING -t nat -i enp0s3 -p tcp –dport 53 -j DNAT –to 10.0.0.10:53
 iptables -A FORWARD -p udp -d  10.0.0.10 –dport 53 -j ACCEPT
 ```
