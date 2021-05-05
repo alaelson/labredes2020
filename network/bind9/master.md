@@ -186,7 +186,7 @@ OK
 ### Configure para somente resolver endereços IPv4
 
 ```bash
-$sudo nano \etc\default\named
+$sudo nano /etc/default/named
 ```
 - adicione a linha ***OPTIONS="-4 -u bind"***
 ```#
