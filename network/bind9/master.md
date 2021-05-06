@@ -121,13 +121,13 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 
 ; name servers
-      IN      NS      ns1.labredes.ifalarapiraca.local.
-      IN      NS      ns2.labredes.ifalarapiraca.local.
+@      IN      NS      ns1.labredes.ifalarapiraca.local.
+@      IN      NS      ns2.labredes.ifalarapiraca.local.
 
 ; PTR Records
 10   IN      PTR     ns1.labredes.ifalarapiraca.local.              ; 10.9.14.10
 11   IN      PTR     ns2.labredes.ifalarapiraca.local.              ; 10.9.14.11
-100  IN      PTR     dh1.labredes.ifalarapiraca.local.    ; 10.9.14.100
+100  IN      PTR     dh1.labredes.ifalarapiraca.local.    	    ; 10.9.14.100
 1    IN      PTR     gw.labredes.ifalarapiraca.local.               ; 10.9.14.1
 ```
 ---
