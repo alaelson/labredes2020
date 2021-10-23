@@ -3,7 +3,7 @@
 ## Relembre as definições de rede na Tabela 1
 
 
-<p><center> Tabela 1: Definições da rede interna</center></p>
+<p><center> Tabela 1: Definições da rede interna turma 914</center></p>
 
 | DESCRIÇÃO   | IP            |
 |:------------|:------------- |
@@ -13,7 +13,19 @@
 | Broadcast   | 10.9.14.255   |
 | NameServer1 | 10.9.14.10    |
 | NameServer2 | 10.9.14.11    |
-| DesktoHost1 | 10.9.14.100    |
+| DesktoHost1 | 10.9.14.50    |
+
+<p><center> Tabela 1: Definições da rede interna turma 924</center></p>
+
+| DESCRIÇÃO   | IP            |
+|:------------|:------------- |
+| rede        | 10.9.24.0     |
+| máscara     | 255.255.255.0 |
+| Gateway     | 10.9.24.1     |
+| Broadcast   | 10.9.24.255   |
+| NameServer1 | 10.9.24.10    |
+| NameServer2 | 10.9.24.11    |
+| DesktoHost1 | 10.9.24.50    |
 
 
 
@@ -30,9 +42,9 @@ Os nomes das máquinas ou dispositivos que serão configuradas no DNS deverão s
 
 ## Siga os roteiros a configuração de cada name-server
 
-- Configurando o Servidor [DNS Master](https://github.com/alaelson/labredes2020/blob/master/network/bind9/master.md) (nameserver1)
+- Configurando o Servidor [DNS Master](https://github.com/alaelson/labredes2021/blob/master/network/bind9/master.md) (nameserver1)
 
-- Configurando o Servidor [DNS Slave](https://github.com/alaelson/labredes2020/blob/master/network/bind9/slave.md) (nameserver1)
+- Configurando o Servidor [DNS Slave](https://github.com/alaelson/labredes2021/blob/master/network/bind9/slave.md) (nameserver1)
 
 # Exercícios
 
